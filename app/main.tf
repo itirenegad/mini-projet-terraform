@@ -22,7 +22,7 @@ module "my-ebs-module" {
 }
 
 resource "aws_volume_attachment" "ebs_att" {
-  device_name = "/dev/sdh"
+  device_name = "/dev/sdf"
   volume_id   = module.my-ebs-module.ebs-id
   instance_id = module.my-ec2-module.ec2-id
 }
